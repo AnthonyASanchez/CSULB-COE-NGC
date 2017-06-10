@@ -17,15 +17,15 @@ Item {
     Component {
         id: squareDelegate
         Rectangle {
-            x: sx - size / 2
-            y: sy - size / 2
+            x: sx - width/2
+            y: sy - height/2
             transform: Rotation {
-                origin.x: size / 2
-                origin.y: size / 2
+                origin.x: width / 2
+                origin.y: height / 2
                 angle: theta
             }
-            width: size
-            height: size
+            width: size * 2
+            height: size * 2
             color: Qt.rgba(r/255., g/255., b/255.)
             antialiasing: true
         }
